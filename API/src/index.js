@@ -8,5 +8,5 @@ app.get('/', function (req, res) {
   });
   
   app.listen(PORT);
-  console.log('');
+  
   console.log(`Express fue iniciado en el puerto ${PORT}`);
