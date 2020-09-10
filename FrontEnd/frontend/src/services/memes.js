@@ -1,4 +1,4 @@
-const url = "https://api.imgflip.com/get_memes"
+const url = "https://api.imgflip.com/get_memes";
 
 export async function getMemesByPopular() {
   const response = await fetch(`${url}`);
