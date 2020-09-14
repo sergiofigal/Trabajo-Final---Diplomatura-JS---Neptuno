@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-const url = "https://api.imgflip.com/get_memes";
-=======
-const url = "https://api.imgflip.com/get_memes"//localHost:8080/Post
->>>>>>> 11f9453952af99782a529f37c7cc69120fed8fa5
+const url = "https://api.imgflip.com/get_memes" //localHost:8080/Post
 
 export async function getMemesByPopular() {
   const response = await fetch(`${url}`);
@@ -10,7 +6,7 @@ export async function getMemesByPopular() {
   return responseJson;
 }
 
-export async function getMemesBySearch (q) {
+export async function getMemesBySearch(q) {
 
 }
 

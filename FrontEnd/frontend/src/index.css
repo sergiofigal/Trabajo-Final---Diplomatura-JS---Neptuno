@@ -1,7 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:display=swap");
 
-body {
+:root {
+  --color0: #0e1649;
+  --color1: #000066;
+  --color2: #1c4bad;
+  --color3: #243C8E;
+  --color4: #00ffff;
+  --color5: #006EB9;
+  --color6: #b5cad6;
+  --maxw: 1400px;
+
+}
+
+/**********************/
+
+a {
+  text-decoration: none !important;
+}
+
+.center-v-h {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color5);
+  border-radius: 50%;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 90%;
+  max-width: unset !important;
+}
+
+@media (min-width: 1440px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1400px;
+  }
+}
+
+/**********************/
+
+.dark {
+  color: #ddd;
+}
+
+.dark .deg-1 {
+  background: var(--color1);
+  background: -moz-linear-gradient(0deg, var(--color1) 0%, var(--color2) 100%);
+  background: -webkit-linear-gradient(0deg, var(--color1) 0%, var(--color2) 100%);
+  background: linear-gradient(0deg, var(--color1) 0%, var(--color2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000066", endColorstr="#1c4bad", GradientType=1);
+}
+
+body.dark {
   font-family: "Montserrat", sans-serif;
+  background-color: var(--color3);
 }
 
 .col-10 {
@@ -9,21 +77,44 @@ body {
   margin-bottom: 100px;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  font-size: 48px;
+.header .neptuno_Logo {
+  width: 200px;
+  margin: -13px 30px -13px 10px;
 }
 
-img {
-  width: 300px;
-  height: 300px;
-  margin: 0;
+.header .neptuno_Logo img {
+  width: 100%;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+/*************/
+
+.center-column {
+  flex: 50%;
 }
+
+.card-columns {
+  column-count: 1;
+}
+
+@media (min-width: 1020px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+/*************/
+
+.modal-content {
+  border: solid 17px #cee5f2;
+  padding: 1rem;
+  background: var(--color0);
+  background: -moz-linear-gradient(0deg, var(--color0) 0%, var(--color5) 100%);
+  background: -webkit-linear-gradient(0deg, var(--color0) 0%, var(--color5) 100%);
+  background: linear-gradient(0deg, var(--color0) 0%, var(--color5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000066", endColorstr="#1c4bad", GradientType=1);
+}
+
+
+
+
+/**/
